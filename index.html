@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet"
+</head>
+<body>
+      <header>
+          <div class="row">
+            <h1>Survey form</h1>
+          </div>
+      </header>
+      <section>
+            <div class="row">
+                <p>
+                  This questionnaire is part of a study of computer usage. Your participation in this study is voluntary, and your answers will form part of a statistical study and will not identify you as an individual.
+                </p>
+            </div>
+            <form action="#" method="get" class="request-form">
+                <div class="row">
+                    <div class="control">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+                    </div>
+                    <div class="control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Please enter your email" required>
+                    </div>
+                    <div class="control">
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" placeholder="Please enter your age" required>
+                    </div>
+                </div>
+                <!-----part-1 and part-2-->
+                <div class="row">
+                    <div class="control-one">
+                        <label for="skills">Skill Level</label>
+                        <select name="skill" id="skill">
+                            <option disabled value="skill">Skill level</option>
+                            <option selected value="No-knowledge">No-knowledge</option>
+                            <option value="nobe">Nobe</option>
+                            <option value="haxor">Haxor</option>
+                            <option value="guro">Guru</option>
+                        </select>
+                    </div>
+                    <div class="control-one">
+                        <label>Which is your favorite OS</label>
+                    </div>
+                    <div class="control-two">
+                      <input type="radio" name="X"> GNU/linux<br>
+                      <input type="radio" name="X"> Mac OS<br>
+                      <input type="radio" name="X"> Windows<br>
+                      <input type="radio" name="X"> FreeBSD
+                    </div>
+                    <div class="control-one">
+                        <label>Which hardware do you own</label>
+                    </div>
+                    <div class="control-two">
+                        <input type="checkbox">Desktop<br>
+                        <input type="checkbox">Laptop<br>
+                        <input type="checkbox" >Mini-PC<br>
+                        <input type="checkbox">serve<br>
+                        <input type="checkbox">sigle Boader Computer<br>
+                    </div>
+                    <div class="control">
+                        <textarea placeholder="additional details" cols="30" rows="10"></textarea>
+                        <input type="submit" value="submit">
+                    </div>
+                </div>
+            </form>
+      </section>
+      <footer>
+          <p>creater by Michel Oliveira 2021</p>
+      </footer>
+</body>
+</html>
